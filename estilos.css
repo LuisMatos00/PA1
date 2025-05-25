@@ -1,0 +1,181 @@
+:root {
+  --color-principal: #ac0a2d;
+  --color-secundario: #1abc9c;
+  --color-texto: #0e0d0d;
+  --color-fondo: #b0cfd6;
+  --padding-base: 16px;
+}
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--color-fondo);
+  color: #2c3e50;
+  padding: var(--padding-base);
+  line-height: 1.6;
+}
+
+header {
+  background-color: var(--color-principal);
+  color: var(--color-texto);
+  text-align: center;
+  padding: var(--padding-base);
+}
+
+nav ul {
+  list-style: none;
+  margin-top: 10px;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+nav a {
+  color: var(--color-texto);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  max-width: 900px;
+  margin: 30px auto;
+  background: #fff;
+  padding: var(--padding-base);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.imagen-portada {
+  width: 100%;
+  height: auto;
+  margin-top: 15px;
+  border-radius: 8px;
+}
+
+ul {
+  list-style: square;
+  margin-left: 25px;
+  margin-bottom: 15px;
+}
+
+ol {
+  margin-left: 25px;
+  margin-bottom: 15px;
+}
+
+a {
+  color: var(--color-secundario);
+}
+
+a:visited {
+  color: #070707;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form label {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+form input,
+form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+form button {
+  background-color: var(--color-secundario);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+form button:hover {
+  background-color: #16a085;
+}
+
+footer {
+  margin-top: 30px;
+  text-align: center;
+  padding: 15px;
+  background-color: var(--color-principal);
+  color: var(--color-texto);
+  font-size: 0.9em;
+}
+
+.info-personal,
+.pasos-desarrollo,
+.bloque-inicio,
+.formulario-contacto {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #f8f8f8;
+  border-left: 5px solid var(--color-principal);
+}
+
+
+/* ===== MENÚ RESPONSIVO ===== */
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background-color: var(--color-principal);
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 6px;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .menu-toggle {
+    display: block;
+    background-color: var(--color-secundario);
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-top: 10px;
+  }
+}
+
+/* Mostrar el menú si el checkbox está activado */
+#toggle-menu:checked ~ nav ul {
+  display: flex;
+}
+
+/* Ocultar el botón en escritorio */
+@media (min-width: 769px) {
+  .menu-toggle,
+  #toggle-menu {
+    display: none;
+  }
+}

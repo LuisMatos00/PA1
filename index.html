@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Producto academico 1</title>
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+
+  <header>
+    <div class="contenedor-header">
+      <h1>Bienvenidos a Mi Página Web</h1>
+      <input type="checkbox" id="toggle-menu" hidden />
+    <label for="toggle-menu" class="menu-toggle">☰ Menú</label>
+    <nav>
+        <ul>
+          <li><a href="#Enunciado /Consigna">Enunciado /Consigna</a></li>
+          <li><a href="#sobre">Sobre mí</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+          <li><a href="https://aulavirtual.continental.edu.pe/my/courses.php" target="_blank">Aula virtual</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div><img src="imagen/conti-removebg-preview.png" alt="logo conti"></div>
+  </header>
+
+  <main>
+    <section id="Enunciado /Consigna">
+      <div class="bloque-Enunciado /Consigna">
+        <h2>Enunciado /Consigna</h2>
+        <p>Bienvenido a mi producto académico 1 del curso de diseño web hecha con <strong>HTML5</strong> 
+        y <em>CSS3</em>. Aquí aplique un poco de los conocimientos aprendidos en clase, espero poder cumplir con lo requerido.</p>
+      <img src="imagen/ingenieria-informatica.jpg" alt="Imagen de ejemplo" class="imagen-portada"/>
+      </div>
+    </section>
+
+    <section id="sobre">
+      <div class="bloque-sobre">
+        <h2>Sobre Mí</h2>
+
+        <div class="info-personal">
+          <p>Buen dia, estimado docente le ssaluda el alumno <strong>Matos Rodriguez Luis Enrique</strong> 
+            con <strong>RNC - 75573</strong>, estudiante de la carrera <strong>Ingenieria Informatica</strong>
+             para el curso de diseño web.</p>
+          <p>Para el desarrollo del producto académico utilice los siguientes recursos</p>
+          <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript básico</li>
+          </ul>
+          <div>
+            <h1>
+              <img src="imagen/codificacion.jpg" alt="codificacion">
+            </h1>
+          </div>
+        </div>
+
+        <div class="pasos-desarrollo">
+          <p> </p>
+          <p>Según lo aprendido en clases se realizó el uso 
+            de <strong>visual estudio code</strong> para poder realizar la primera 
+            implementación de codificación en el diseño de la pagina web,
+             para la cual se realizaráron los siguientes pasos.</p>
+          <ol>
+            <li>Escribir el HTML.</li>
+            <li>Aplicar los estilos con CSS.</li>
+            <li>Validar y probar el sitio en navegadores.</li>
+          </ol>
+        </div>
+        <div>   <img src="imagen/programacion.PNG" alt="formularios"></div>
+      </div>
+    </section>
+
+    <section id="contacto">
+      <div class="formulario-contacto">
+        <h2>Formulario de Contacto</h2>
+        <form action="#" method="post">
+          <div class="campo-form">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+          </div>
+
+          <div class="campo-form">
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" placeholder="46565635@continental.edu.pe" required />
+          </div>
+
+          <div class="campo-form">
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+          </div>
+
+          <button type="submit">Prueba</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="pie">
+      <p>&copy; 2025 Mi Sitio Web. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
